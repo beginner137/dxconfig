@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/dorisxiang/.oh-my-zsh"
+export ZSH="/Users/$(id -un)/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -119,11 +119,3 @@ export PATH=~/.local/bin:$PATH
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-alias webpack='~/mycourses/udemy-webpack-course/my-webpack-course/node_modules/.bin/webpack'
-alias webpack-dev-server='~/mycourses/udemy-webpack-course/my-webpack-course/node_modules/.bin/webpack-dev-server'
-alias babel='~/mycourses/udemy-webpack-course/my-webpack-course/node_modules/.bin/babel'
-alias nodemon='~/mycourses/udemy-webpack-course/my-webpack-course/node_modules/.bin/nodemon'
-alias start-env='source ~/myproj/mySite/mysite/bin/activate'
-alias migrate='./manage.py makemigrations && ./manage.py migrate'
-
